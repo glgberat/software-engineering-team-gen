@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "name": "software-team-generator",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glgberat/software-engineering-team-gen.git"
+  },
+  "author": "Mehmet B Huyuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glgberat/software-engineering-team-gen/issues"
+  },
+  "homepage": "https://github.com/glgberat/software-engineering-team-gen#readme"
+}
