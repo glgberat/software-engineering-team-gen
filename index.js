@@ -4,6 +4,14 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
+const path = require("path");
+const fs = require("fs");
+
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
+const indexPath = path.join(OUTPUT_DIR, "index.html");
+
+const generate = require("./lib/generateHTML");
+
 
 const team = [];
 
@@ -128,7 +136,7 @@ function intern() {
 }
 
 function writeTeam() {
-  fs.writeFileSync(outputPath, render(members), "utf-8");
+  fs.writeFileSync(indexPath, generate(team), "utf-8");
 } 
 
 function generateTeam() {

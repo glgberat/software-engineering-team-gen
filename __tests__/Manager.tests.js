@@ -1,11 +1,11 @@
 const Manager = require ('../lib/Manager.js');
 
-test("Can set Office Number for manager object", ()=>{
-const manager = new Manager("Mehmet",1,"emai@email.com",1);
-
-expect(manager.officeNumber).toEqual(expect.any(Number));
-
+test("Can get officeNumber via getOfficenumber()", () => {
+  const test = "Officenumber";
+  const manager = new Manager("Name", 1, "email@email.com", test);
+  expect(manager.getofficeNumber()).toBe(test);
 });
+
 
 
 test("getRole() should return \"Manager\"", () => {
