@@ -1,17 +1,18 @@
 const Intern = require("../lib/Intern.js");
 
 test("Can set School for intern object", ()=>{
-    const intern = new Intern("Mehmet");
-    const schoolName = "test";
+  
+  const intern = new Intern("Mehmet", 1,"e@email.com","columbia");
     
-    expect(intern.school).toBe(schoolName);
+    
+    expect(intern.school).toBe("columbia");
     
     });
 
 
     test("Can get school name via getSchool()", () => {
         const testschoolname = "school";
-        const intern = new Intern("Mehmet");
+        const intern = new Intern("Mehmet", 1,"e@email.com", testschoolname);
         expect(intern.getSchool()).toBe(testschoolname);
       });
     
